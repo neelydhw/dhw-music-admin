@@ -1,11 +1,9 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import Layout from './pages/Layout.vue';
 </script>
 
 <template>
-  <HelloWorld msg="Vite App" />
+  <router-view />
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
