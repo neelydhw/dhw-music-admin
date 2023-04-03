@@ -6,10 +6,12 @@
 <script>
 import { useStore } from 'vuex';
 import { computed } from 'vue';
+
 export default {
   name: 'Index',
   setup() {
     const store = useStore();
+    console.log(store.state);
     return {
       // 在 computed 函数中访问 state
       nickname: computed(() => store.state.user.nickname),
